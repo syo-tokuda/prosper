@@ -1,0 +1,67 @@
+<div class="wrapper">
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
+	<div id="calc">
+		<table>
+			<thead>
+			  <tr>
+				<th><span id="agr_char">農業</span></th>
+				<th><span id="ind_char">工業</span></th>
+				<th><span id="com_char">商業</span></th>
+				<th><span id="wat_char">水質・土壌</span></th>
+				<th><span id="atm_char">大気・CO2</span></th>
+				<th><span id="lif_char">生活</span></th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr>
+				<td><input readonly id="agriculture" value=0></td>
+				<td><input readonly id="industry" value=0></td>
+				<td><input readonly id="commerce" value=0></td>
+				<td><input readonly id="water" value=0></td>
+				<td><input readonly id="atmosphere" value=0></td>
+				<td><input readonly id="life" value=0></td>
+			  </tr>
+			</tbody>
+		  </table>
+	<div>
+		<button onclick="card_click(this.innerHTML)" class="agriculture">野菜畑</button>
+		<button onclick="card_click(this.innerHTML)" class="agriculture">収穫体験農場</button>
+		<button onclick="card_click(this.innerHTML)" class="agriculture">果樹園</button>
+		<button onclick="card_click(this.innerHTML)" class="agriculture">酪農</button>
+		<button onclick="card_click(this.innerHTML)" class="agriculture">プランテーション</button>
+	</div>
+	<div>
+		<button onclick="card_click(this.innerHTML)" class="industry">町工場</button>
+		<button onclick="card_click(this.innerHTML)" class="industry">食品工場</button>
+		<button onclick="card_click(this.innerHTML)" class="industry">化学工場</button>
+		<button onclick="card_click(this.innerHTML)" class="industry">自動車工場</button>
+		<button onclick="card_click(this.innerHTML)" class="industry">宇宙開発</button>
+	</div>
+	<div>
+		<button onclick="card_click(this.innerHTML)" class="commerce">商店街</button>
+		<button onclick="card_click(this.innerHTML)" class="commerce">コンビニ</button>
+		<button onclick="card_click(this.innerHTML)" class="commerce">デパート</button>
+		<button onclick="card_click(this.innerHTML)" class="commerce">遊園地</button>
+		<button onclick="card_click(this.innerHTML)" class="commerce">リゾート施設</button>
+	</div>
+	<div>
+		<button onclick="card_click(this.innerHTML)" class="protection">下水処理場</button>
+		<button onclick="card_click(this.innerHTML)" class="protection">焼却炉</button>
+		<button onclick="card_click(this.innerHTML)" class="protection">サイクロン</button>
+		<button onclick="card_click(this.innerHTML)" class="protection">環境モニタリング</button>
+		<button onclick="card_click(this.innerHTML)" class="protection">埋め立て場</button>
+	</div>
+	<div>
+		<button onclick="card_click(this.innerHTML)"  class="protection">リサイクル</button>
+		<button onclick="card_click(this.innerHTML)" class="protection">バイオレメディエーション</button>
+		<button onclick="card_click(this.innerHTML)" class="protection">カーボンリサイクル</button>
+		<button onclick="card_click(this.innerHTML)" class="protection">節電</button>
+	</div>
+	<div>
+		<input readonly id="card" type="text">
+		<button onclick="add_click()">addition</button>
+		<button onclick="sub_click()">subtraction</button>
+		<button onclick="reset_click()" id="reset">reset</button>
+	</div>
+</div>
