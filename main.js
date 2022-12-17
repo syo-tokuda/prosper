@@ -33,7 +33,7 @@ window.onload = function () {
 function card_click(val){
   if(val=="野菜畑")
     card = agriculture[0];
-  else if(val=="収穫体験農場")
+  else if(val=="ビニールハウス")
     card = agriculture[1];
   else if(val=="果樹園")
     card = agriculture[2];

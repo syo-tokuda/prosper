@@ -63,8 +63,8 @@ button.commerce:hover{
   background-color: rgb(254, 192, 188);
 }
 button.protection {
-  border: 2px solid orange;
+  border: 2px solid rgb(252, 252, 83);
 }
 button.protection:hover{
-  background-color: rgb(255, 222, 114);
+  background-color: khaki;
 }
