@@ -2,7 +2,7 @@
 var agriculture = [[2,0,0,1,-1,0], [2,0,1,2,-1,0], [4,0,0,3,-1,0], [6,0,1,3,3,0], [8,0,3,3,8,0]];
 var industry = [[0,2,0,0,0,0], [1,3,0,0,1,1], [3,3,0,2,2,0], [0,6,0,0,3,2], [0,8,3,2,7,2]];
 var commerce = [[0,0,2,0,0,0], [1,1,2,0,0,2], [1,1,4,1,0,3], [0,2,5,0,2,4], [0,3,8,2,2,7]];
-var protection = [[0,0,0,-4,0,-1], [0,0,0,-5,5,-5], [0,0,0,0,-5,0], [0,0,0,-2,-2,-1], [0,0,0,1,0,-6], [0,1,0,0,-2,-3], [0,0,0,-5,0,0], [0,0,0,0,-5,0], [0,0,0,0,-6,1]];
+var protection = [[0,1,0,0,-2,-3], [0,0,0,0,-5,0], [0,0,0,-5,0,0], [0,0,0,0,-5,0], [0,0,0,-2,-2,-1], [0,0,0,-4,0,-1], [0,0,0,-5,5,-5], [0,0,0,1,0,-6], [0,0,0,0,-6,1]];
 var result = [0,0,0,0,0,0];
 var card = [0,0,0,0,0,0];
 var reset = [0,0,0,0,0,0];
@@ -25,6 +25,7 @@ window.onload = function () {
   document.getElementById("atm_char").style.color = "magenta";
   document.getElementById("lif_char").style.color = "gold";
   document.getElementById("reset").style.marginLeft = "90px";
+  document.getElementById("bio").style.fontSize = "0.9rem";
   state.style.width = "32%";
   state.style.fontSize = "1.5rem";
 };
@@ -61,21 +62,21 @@ function card_click(val){
     card = commerce[3];
   else if(val=="リゾート施設")
     card = commerce[4];
-  else if(val=="下水処理場")
-    card = protection[0];
-  else if(val=="焼却炉")
-    card = protection[1];
-  else if(val=="サイクロン")
-    card = protection[2];
-  else if(val=="環境モニタリング")
-    card = protection[3];
-  else if(val=="埋め立て場")
-    card = protection[4];
   else if(val=="リサイクル")
-    card = protection[5];
-  else if(val=="バイオレメディエーション")
-    card = protection[6];
+    card = protection[0];
   else if(val=="カーボンリサイクル")
+    card = protection[1];
+  else if(val=="バイオレメディエーション")
+    card = protection[2];
+  else if(val=="バグフィルター")
+    card = protection[3];
+  else if(val=="モニタリング")
+    card = protection[4];
+  else if(val=="下水処理場")
+    card = protection[5];
+  else if(val=="焼却炉")
+    card = protection[6];
+  else if(val=="埋め立て場")
     card = protection[7];
   else if(val=="節電")
     card = protection[8];
