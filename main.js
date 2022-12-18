@@ -26,7 +26,7 @@ window.onload = function () {
   document.getElementById("lif_char").style.color = "gold";
   document.getElementById("reset").style.marginLeft = "90px";
   document.getElementById("carbon").style.fontSize = "0.9rem";
-  document.getElementById("bio").style.fontSize = "0.7rem";
+  document.getElementById("bio").style.fontSize = "1.0rem";
   state.style.width = "32%";
   state.style.fontSize = "1.5rem";
 };
