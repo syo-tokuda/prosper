@@ -19,14 +19,13 @@ window.onload = function () {
   state = document.getElementById('card');
   
   document.getElementById("agr_char").style.color = "green";
-  document.getElementById("ind_char").style.color = "blue";
   document.getElementById("com_char").style.color = "red";
   document.getElementById("wat_char").style.color = "DeepSkyBlue";
   document.getElementById("atm_char").style.color = "magenta";
   document.getElementById("lif_char").style.color = "gold";
   document.getElementById("reset").style.marginLeft = "90px";
   document.getElementById("carbon").style.fontSize = "17px";
-  document.getElementById("bio").style.fontSize = "15px";
+  document.getElementById("bio").style.fontSize = "14px";
   state.style.width = "32%";
   state.style.fontSize = "1.5rem";
 };
