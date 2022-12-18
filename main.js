@@ -18,7 +18,6 @@ window.onload = function () {
   result[5] = document.getElementById('life');
   state = document.getElementById('card');
   
-  document.getElementById("agr_char").style.color = "green";
   document.getElementById("ind_char").style.color = "blue";
   document.getElementById("com_char").style.color = "red";
   document.getElementById("wat_char").style.color = "DeepSkyBlue";
