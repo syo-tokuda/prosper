@@ -25,8 +25,8 @@ window.onload = function () {
   document.getElementById("atm_char").style.color = "magenta";
   document.getElementById("lif_char").style.color = "gold";
   document.getElementById("reset").style.marginLeft = "90px";
-  document.getElementById("carbon").style.fontSize = "1.0rem";
-  document.getElementById("bio").style.fontSize = "1.0rem";
+  document.getElementById("carbon").style.fontSize = "17px";
+  document.getElementById("bio").style.fontSize = "14px";
   state.style.width = "32%";
   state.style.fontSize = "1.5rem";
 };
