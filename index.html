@@ -5,22 +5,22 @@
 		<table>
 			<thead>
 			  <tr>
-				<th><span id="agr_char">農業</span></th>
-				<th><span id="ind_char">工業</span></th>
-				<th><span id="com_char">商業</span></th>
-				<th><span id="wat_char">水質・土壌</span></th>
-				<th><span id="atm_char">大気・CO2</span></th>
-				<th><span id="lif_char">生活</span></th>
+				<th><span id="agr_char" class="char">農業</span></th>
+				<th><span id="ind_char" class="char">工業</span></th>
+				<th><span id="com_char" class="char">商業</span></th>
+				<th><span id="wat_char" class="char">水質・土壌</span></th>
+				<th><span id="atm_char" class="char">大気・CO2</span></th>
+				<th><span id="lif_char" class="char">生活</span></th>
 			  </tr>
 			</thead>
 			<tbody>
 			  <tr>
-				<td><input readonly id="agriculture" value=0></td>
-				<td><input readonly id="industry" value=0></td>
-				<td><input readonly id="commerce" value=0></td>
-				<td><input readonly id="water" value=0></td>
-				<td><input readonly id="atmosphere" value=0></td>
-				<td><input readonly id="life" value=0></td>
+				<td><input  id="agriculture" value=0></td>
+				<td><input  id="industry" value=0></td>
+				<td><input  id="commerce" value=0></td>
+				<td><input  id="water" value=0></td>
+				<td><input  id="atmosphere" value=0></td>
+				<td><input  id="life" value=0></td>
 			  </tr>
 			</tbody>
 		  </table>
@@ -62,6 +62,7 @@
 		<input readonly id="card" type="text">
 		<button onclick="add_click()">addition</button>
 		<button onclick="sub_click()">subtraction</button>
+		<input readonly id="num" type="text" value=0>
 		<button onclick="reset_click()" id="reset">reset</button>
 	</div>
 </div>

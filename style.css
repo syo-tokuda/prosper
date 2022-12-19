@@ -68,3 +68,7 @@ button.protection {
 button.protection:hover{
   background-color: khaki;
 }
+
+span.char {
+  font-family: Arial;
+}

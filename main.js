@@ -6,6 +6,7 @@ var protection = [[0,1,0,0,-2,-3], [0,0,0,0,-5,0], [0,0,0,-5,0,0], [0,0,0,0,-5,0
 var result = [0,0,0,0,0,0];
 var card = [0,0,0,0,0,0];
 var reset = [0,0,0,0,0,0];
+var card_state = 0;
 var state;
 
 // 初期表示
@@ -17,6 +18,7 @@ window.onload = function () {
   result[4] = document.getElementById('atmosphere');
   result[5] = document.getElementById('life');
   state = document.getElementById('card');
+  card_num = document.getElementById('num');
   
   document.getElementById("agr_char").style.color = "green";
   document.getElementById("ind_char").style.color = "blue";
@@ -24,11 +26,13 @@ window.onload = function () {
   document.getElementById("wat_char").style.color = "DeepSkyBlue";
   document.getElementById("atm_char").style.color = "magenta";
   document.getElementById("lif_char").style.color = "gold";
-  document.getElementById("reset").style.marginLeft = "90px";
   document.getElementById("carbon").style.fontSize = "17px";
   document.getElementById("bio").style.fontSize = "13px";
+  card_num.style.marginLeft = "8px";
   state.style.width = "32%";
   state.style.fontSize = "1.5rem";
+  card_num.style.width = "6%";
+  card_num.style.fontSize = "1.5rem";
 };
 
 // cardキークリック
@@ -83,6 +87,7 @@ function card_click(val){
     card = protection[8];
 
   state.value = val;
+  card_state = 1;
 }
 
 // resetキークリック
@@ -92,6 +97,8 @@ function reset_click(){
   
     card = reset;
     state.value = null;
+    card_num.value = 0;
+    card_state = 0;
 }
 
 // addキークリック
@@ -102,7 +109,10 @@ function add_click(){
   }
     
   card = reset;
+  if(card_state==1)
+    card_num.value++;
   state.value = null;
+  card_state = 0;
 }
 
 // subキークリック
@@ -113,5 +123,8 @@ function sub_click(){
   }
   
   card = reset;
+  if(card_state==1)
+    card_num.value--;
   state.value = null;
+  card_state = 0;
 }
